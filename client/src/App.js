@@ -1,7 +1,6 @@
 import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
 import "./App.css";
 import Login from "./component/Login";
-import Profile from "./component/Profile";
 import Signin from "./component/Signin";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Todo from "./component/Todo";
@@ -22,7 +21,6 @@ function App() {
             <Route path="/" element={<Login/>} />
             <Route path="/todo" element={<Todo/>} />
             <Route path="signin" element={<Signin />} />
-            <Route path="profile" element={<Profile />} />
           </Routes>
         </BrowserRouter>
       </ThemeProvider>
